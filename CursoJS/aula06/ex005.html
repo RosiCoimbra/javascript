@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <!--Document Object Model - Conjunto de objetos dentro do navegador, que da acesso aos componentos internos do website, o DOM não funciona dentro do NODEJS
+    DOM está presente quando roda o JavaScript dentro do navegador-->
+    <h1>Iniciando estudos com DOM</h1> 
+    <p>Aqui vai o resultado</p>
+    <P>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</P>
+    <div name = "msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        /*var d = document.getElementById("msg")
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        window.document.write(`Está escrito assim: ` + p1.innerText)
+        window.alert(p1.innerText)
+        corpo.style.background = 'black'
+        p1.style.color = "blue"*/
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+       
+    </script>
+</body>
+</html>
